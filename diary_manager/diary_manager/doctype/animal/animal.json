@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{animal_type}-{animal_tag}",
+ "creation": "2024-06-26 16:41:00.839220",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_details_section",
+  "animal_tag",
+  "animal_type",
+  "animal_gender",
+  "column_break_srln",
+  "animal_date_of_purchase",
+  "status",
+  "animaldate_of_last_pregnant"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "animal_tag",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tag",
+   "no_copy": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "animal_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Cow\nBuffalo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_srln",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "animal_date_of_purchase",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Of Purchase",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pregnant\nProducing Milk",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "animaldate_of_last_pregnant",
+   "fieldtype": "Date",
+   "label": "Date Of Last Pregnant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "animal_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 17:21:49.549458",
+ "modified_by": "Administrator",
+ "module": "Diary Manager",
+ "name": "Animal",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Diary Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

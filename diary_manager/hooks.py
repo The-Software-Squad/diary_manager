@@ -129,6 +129,12 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+# doc_events = {
+#     "Milk Daily Log": {
+#         "before_save": "diary_manager.diary_manager.calculate_total_milk_production.calculate_total_milk_production"
+#     }
+# }
+
 
 # Scheduled Tasks
 # ---------------
@@ -226,4 +232,6 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+
 

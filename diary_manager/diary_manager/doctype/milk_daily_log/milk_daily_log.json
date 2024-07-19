@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{milk_daily_log_date}",
+ "creation": "2024-06-26 16:52:54.108397",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "daily_milk_log_section",
+  "milk_daily_log_date",
+  "milk_log_table",
+  "worker_milk_production",
+  "total_cow_milk",
+  "total_buffalo_milk",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "daily_milk_log_section",
+   "fieldtype": "Section Break",
+   "label": "Daily Milk Log"
+  },
+  {
+   "default": "Today",
+   "fieldname": "milk_daily_log_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "milk_log_table",
+   "fieldtype": "Table",
+   "label": "Log",
+   "options": "Milk Log Entry"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_cow_milk",
+   "fieldtype": "Float",
+   "label": "Total Cow Milk",
+   "precision": "1"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_buffalo_milk",
+   "fieldtype": "Float",
+   "label": "Total Buffalo Milk",
+   "precision": "1"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "worker_milk_production",
+   "fieldtype": "Table",
+   "label": "Worker Milk Production",
+   "options": "Worker Daily Milk Production"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-19 18:54:28.837521",
+ "modified_by": "Administrator",
+ "module": "Diary Manager",
+ "name": "Milk Daily Log",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
