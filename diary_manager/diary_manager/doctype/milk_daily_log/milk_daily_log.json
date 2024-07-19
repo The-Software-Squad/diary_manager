@@ -58,12 +58,13 @@
    "fieldname": "worker_milk_production",
    "fieldtype": "Table",
    "label": "Worker Milk Production",
-   "options": "Worker Daily Milk Production"
+   "options": "Worker Daily Milk Production",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-19 18:54:28.837521",
+ "modified": "2024-07-19 20:06:29.653845",
  "modified_by": "Administrator",
  "module": "Diary Manager",
  "name": "Milk Daily Log",
@@ -81,9 +82,34 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Diary Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GVS Farms Manager",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
