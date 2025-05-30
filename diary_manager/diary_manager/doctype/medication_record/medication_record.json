@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-30 11:15:54.665729",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medicaton_date",
+  "column_break_ffkj",
+  "medication_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "medicaton_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ffkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medication_details",
+   "fieldtype": "Long Text",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Details",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-30 11:17:32.419226",
+ "modified_by": "Administrator",
+ "module": "Diary Manager",
+ "name": "Medication Record",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

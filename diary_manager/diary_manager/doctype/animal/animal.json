@@ -10,10 +10,16 @@
   "animal_tag",
   "animal_type",
   "animal_gender",
+  "animal_parent",
   "column_break_srln",
   "animal_date_of_purchase",
   "status",
-  "animaldate_of_last_pregnant"
+  "animaldate_of_last_pregnant",
+  "animal_last_crossing_date",
+  "animal_milk_produced",
+  "section_break_ecsr",
+  "medication_record",
+  "animal_remarks"
  ],
  "fields": [
   {
@@ -70,11 +76,42 @@
    "fieldtype": "Select",
    "label": "Gender",
    "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "section_break_ecsr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "animal_remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "animal_parent",
+   "fieldtype": "Link",
+   "label": "Parent",
+   "options": "Animal"
+  },
+  {
+   "fieldname": "animal_last_crossing_date",
+   "fieldtype": "Date",
+   "label": "\u2060Last crossing Date"
+  },
+  {
+   "fieldname": "animal_milk_produced",
+   "fieldtype": "Float",
+   "label": "Total Milk Produced"
+  },
+  {
+   "fieldname": "medication_record",
+   "fieldtype": "Table",
+   "label": "Medication Records",
+   "options": "Medication Record"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-19 20:03:50.783350",
+ "modified": "2025-05-30 11:18:26.824391",
  "modified_by": "Administrator",
  "module": "Diary Manager",
  "name": "Animal",
